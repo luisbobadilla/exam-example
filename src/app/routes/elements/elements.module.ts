@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { TreeModule } from 'angular-tree-component';
 import { DndModule } from 'ng2-dnd';
 import { InfiniteScrollModule } from 'ngx-infinite-scroll';
+import { ToasterService } from 'angular2-toaster/angular2-toaster';
 
 import { SharedModule } from '../../shared/shared.module';
 import { ButtonsComponent } from './buttons/buttons.component';
@@ -63,6 +64,9 @@ const routes: Routes = [
         SortableComponent,
         InfinitescrollComponent,
         SweetalertComponent
+    ],
+    providers: [
+        ToasterService
     ],
     exports: [
         RouterModule

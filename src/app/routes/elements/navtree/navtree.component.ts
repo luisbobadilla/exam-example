@@ -10,8 +10,8 @@ const actionMapping: IActionMapping = {
         dblClick: TREE_ACTIONS.TOGGLE_EXPANDED,
         click: (tree, node, $event) => {
             $event.shiftKey
-                ? TREE_ACTIONS.TOGGLE_SELECTED_MULTI(tree, node, $event)
-                : TREE_ACTIONS.TOGGLE_SELECTED(tree, node, $event);
+                ? TREE_ACTIONS.TOGGLE_ACTIVE_MULTI(tree, node, $event)
+                : TREE_ACTIONS.TOGGLE_ACTIVE(tree, node, $event);
         }
     },
     keys: {

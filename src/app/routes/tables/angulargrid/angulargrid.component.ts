@@ -140,8 +140,7 @@ export class AngulargridComponent implements OnInit, OnDestroy {
         this.columnDefsPinned[0].pinned = 'left';
         this.gridOptions2 = <GridOptions>{
             columnDefs: this.columnDefsPinned,
-            rowData: null,
-            pinnedColumnCount: 2,
+            rowData: null
         };
 
         // Load from JSON
